@@ -1,0 +1,15 @@
+#include<stdio.h
+int sum(int n){
+	if(n!=0)
+	 return(n%10+sum(n/10));
+	else
+	 return0;
+}
+int main()
+{
+	intn;
+	printf("Enter a number-");
+	scanf("%d",&n);
+	printf("sum of the digitsof%dis:%d",n,sum(n));
+	return0;
+}
