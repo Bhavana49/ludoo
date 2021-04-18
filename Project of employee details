@@ -1,0 +1,132 @@
+#include <iostream>
+using namespace std;
+  
+struct employee {
+    string ename;
+    int age, phn_no;
+    int salary;
+};
+  
+// Function to display details of all employees
+void display(struct employee emp[], int n)
+{
+    cout << "Name\tAge\tPhone Number\tSalary\n";
+    for (int i = 0; i < n; i++) {
+        cout << emp[i].ename << "\t" << emp[i].age << "\t"
+             << emp[i].phn_no << "\t" << emp[i].salary << "\n";
+    }
+}
+  
+// Driver code
+int main()
+{
+    int n = 3;
+    // Array of structure objects
+    struct employee emp[n];
+  
+    // Details of employee 1
+    emp[0].ename = "Bhavana";
+    emp[0].age = 24;
+    emp[0].phn_no = 1234567788;
+    emp[0].salary = 20000;
+  
+    // Details of employee 2
+    emp[1].ename = "Bangaram";
+    emp[1].age = 31;
+    emp[1].phn_no = 1234567891;
+    emp[1].salary = 56000;
+  
+    // Details of employee 3
+    emp[2].ename = "Sai sree";
+    emp[2].age = 45;
+    emp[2].phn_no = 1100661111;
+    emp[2].salary = 30500;
+    // Details of employee 4
+    emp[2].ename = "My Baby";
+    emp[2].age = 46;
+    emp[2].phn_no = 1100661121;
+    emp[2].salary = 30500;
+    // Details of employee 5
+    emp[2].ename = "Mera zindhagi";
+    emp[2].age = 20;
+    emp[2].phn_no = 1100661221;
+    emp[2].salary = 50500;
+     // Details of employee 6
+    emp[2].ename = "Annaya";
+    emp[2].age = 20;
+    emp[2].phn_no = 1100661231;
+    emp[2].salary = 40500;
+       // Details of employee 7
+    emp[2].ename = "mythili";
+    emp[2].age = 25;
+    emp[2].phn_no = 1180661221;
+    emp[2].salary = 50600;
+       // Details of employee 8
+    emp[2].ename = "Maruthi";
+    emp[2].age = 30;
+    emp[2].phn_no = 2100661221;
+    emp[2].salary = 50500;
+       // Details of employee 9
+    emp[2].ename = "Myna";
+    emp[2].age = 20;
+    emp[2].phn_no = 2100661222;
+    emp[2].salary = 50500;
+       // Details of employee 10
+    emp[2].ename = "navya";
+    emp[2].age = 20;
+    emp[2].phn_no = 1100761221;
+    emp[2].salary = 52500;
+       // Details of employee 11
+    emp[2].ename = "pavani";
+    emp[2].age = 20;
+    emp[2].phn_no = 1100661241;
+    emp[2].salary = 50500;
+       // Details of employee 12
+    emp[2].ename = "fani";
+    emp[2].age = 20;
+    emp[2].phn_no = 1100661821;
+    emp[2].salary = 50500;
+       // Details of employee 13
+    emp[2].ename = "nandhini";
+    emp[2].age = 20;
+    emp[2].phn_no = 1100661791;
+    emp[2].salary = 50500;
+       // Details of employee 14
+    emp[2].ename = "nani";
+    emp[2].age = 20;
+    emp[2].phn_no = 1100661621;
+    emp[2].salary = 50500;
+       // Details of employee 15
+    emp[2].ename = "magi";
+    emp[2].age = 20;
+    emp[2].phn_no = 1100561221;
+    emp[2].salary = 55500;
+       // Details of employee 16
+    emp[2].ename = "priyamani";
+    emp[2].age = 20;
+    emp[2].phn_no = 1100461221;
+    emp[2].salary = 60500;
+       // Details of employee 17
+    emp[2].ename = "krishnaveni";
+    emp[2].age = 20;
+    emp[2].phn_no = 1108961221;
+    emp[2].salary = 50900;
+       // Details of employee 18
+    emp[2].ename = "monitha";
+    emp[2].age = 20;
+    emp[2].phn_no = 1100679221;
+    emp[2].salary = 50550;
+       // Details of employee 19
+    emp[2].ename = "Mounika";
+    emp[2].age = 20;
+    emp[2].phn_no = 14566612215;
+    emp[2].salary = 65500;
+       // Details of employee 20
+    emp[2].ename = "Appana";
+    emp[2].age = 20;
+    emp[2].phn_no = 1100661226;
+    emp[2].salary = 50590;
+    display(emp, n);
+  
+    return 0;
+}
